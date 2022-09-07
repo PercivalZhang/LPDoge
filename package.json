@@ -1,0 +1,43 @@
+{
+  "name": "lp-doge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "disk/main.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "tsc --resolveJsonModule",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit && eslint 'src/**/*.ts' --quiet --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PercivalZhang/Web3SwissKnife.git"
+  },
+  "keywords": [
+    "defi",
+    "ether",
+    "web3"
+  ],
+  "author": "mingqi@email.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PercivalZhang/Web3SwissKnife/issues"
+  },
+  "homepage": "https://github.com/PercivalZhang/Web3SwissKnife#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "@types/prettier": "^2.7.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.4",
+    "ts-loader": "^6.1.1",
+    "ts-node": "^8.4.1",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^5.20.0",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "bignumber": "^1.1.0",
+    "nft.storage": "^7.0.0",
+    "web3-gear": "^1.0.34"
+  }
+}
