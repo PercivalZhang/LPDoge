@@ -1,3 +1,3 @@
-# Contract Helper
+# Demo
 
-Help to interact with Ether Contract
+How to get user LP farming details in PancakeSwap
