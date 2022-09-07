@@ -30,7 +30,7 @@ const NFTStorageAPIKey = Config.NFTStorageAPIKey;
 
 const client = new NFTStorage({ token: NFTStorageAPIKey });
 
-const userAddress = "0x1582B06D8C4b6c5990E2bA951D88A88363DaB891";
+const userAddress = "0xd183f2bbf8b28d9fec8367cb06fe72b88778c86b";
 
 const logger = LoggerFactory.getInstance().getLogger("main");
 
@@ -122,7 +122,7 @@ const main = async () => {
   });
   // store into nft.storage
   const cid = await client.storeBlob(content);
-  console.log(cid);
+  logger.info(`nft.storage > cid - ${cid}`);
   console.log(myLPSnapshot);
 };
 
